@@ -1,14 +1,20 @@
+import './CostItem.css'
+
 function CostItem() {
-  return <div>
-    <div>Июнь 2022 15</div>
-    <div>
-      <h2>Холодильник</h2>
-      <div>$ 1000</div>
+  // const costDate = new Date(2022, 6, 6);
+  // const costDescription = 'Холодильник';
+  // const costAmount = 1000;
+  return (
+    <div className="cost-item">
+      <div>vfhn</div>
+      <div className="cost-item__description">
+        <h2>Холодильник</h2>
+        <div className="cost-item__price">asd</div>
+      </div>
+
     </div>
 
-  </div>
-
-
+  );
 }
 
 export default CostItem;

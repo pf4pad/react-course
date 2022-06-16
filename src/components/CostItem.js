@@ -1,20 +1,50 @@
-import './CostItem.css'
+import './CostItem.css';
+import CostDate from './CostDate';
 
-function CostItem() {
-  const costDate = new Date(2022, 6, 6);
-  const costDescription = 'Холодильник';
-  const costAmount = 1000;
+function CostItem(props) {
   return (
-    <div className="cost-item">
-      <div>{costDate.toString()}</div>
-      <div className="cost-item__description">
-        <h2>{costDescription}</h2>
-        <div className="cost-item__price">$ {costAmount}</div>
+    <div>
+      <div className='cost-item'>
+        <CostDate date={props.date} />
+        <div className='cost-item__description'>
+          <h2>{props.description}</h2>
+          <div className='cost-item__price'>$ {props.amount}</div>
+        </div>
       </div>
-
     </div>
-
   );
 }
 
 export default CostItem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import './CostItem.css'
+
+// function CostItem(props) {
+
+//   return (
+//     <div className="cost-item">
+//       <div>{props.date.toString()}</div>
+//       <div className="cost-item__description">
+//         <h2>{props.description}</h2>
+//         <div className="cost-item__price">$ {props.amount}</div>
+//       </div>
+
+//     </div>
+
+//   );
+// }
+
+// export default CostItem;

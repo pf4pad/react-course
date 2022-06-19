@@ -4,7 +4,7 @@ function App() {
 
   const costs = [
     {
-      date: new Date(2021, 4, 20),
+      date: new Date(2022, 4, 20),
       description: "Холодильник",
       amount: 999.99,
     },

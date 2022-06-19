@@ -3,7 +3,7 @@ import CostItem from "./CostItem";
 
 function Costs(props) {
   return (
-    <div className="costs">
+    <div className="costs" >
       <CostItem
         date={props.costs[0].date}
         description={props.costs[0].description}
@@ -22,5 +22,4 @@ function Costs(props) {
     </div>
   )
 }
-
 export default Costs;
